@@ -1,0 +1,8 @@
+.alerta {
+  background-color: yellow;   
+  border: 1px solid #ccc;     
+  padding: 10px;              
+  border-radius: 4px;         
+  color: #333;                
+  font-weight: bold;          
+}
