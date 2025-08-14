@@ -1,28 +1,15 @@
+import React from "react";
+import Header from "./components/Header";  // Importando o Header.jsx
+import MainContent from "./components/MainContent";  // Importando o MainContent.jsx
+import "./App.css"; // Importando o CSS global para o App
 
-
-  
-  import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import './App.css';
-import Saudacao from './components/Saudacao';
-import Rodape from './components/Rodape';
-import Alerta from './components/Alerta'; 
-import EmailInput from './components/Emailinput';
-import PasswordInput from './components/Passwordinput';
-import LoginButton from './components/LoginButton';
-function App() {
+const App = () => {
   return (
-    <>
-      <h1>Trakz</h1>
-      <Saudacao />
-      <Rodape />
-      <Alerta />
-    <EmailInput/>
-    <PasswordInput/>
-    <LoginButton/>
-    </>
+    <div>
+      <Header /> 
+      <MainContent /> 
+    </div>
   );
-}
+};
 
 export default App;
