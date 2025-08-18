@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import styles from "./MainContent.module.css"; // Corrigido o caminho do CSS
 
 const MainContent = () => {
@@ -21,4 +21,4 @@ const MainContent = () => {
   );
 };
 
-export default MainContent;
+export default MainContent; */
