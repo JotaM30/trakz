@@ -1,15 +1,18 @@
 import { useState } from 'react';
- 
-function ModoNoturno() {
-  const [modoNoturno, setModoNoturno] = useState(false);
- 
+
+function FormularioContato() {
+  const [nome, setNome] = useState('');
+  const [msg, setMsg] = useState('');
+
   return (
-    <div className={modoNoturno ? 'dark' : 'light'}> 
-      <h1>Título</h1>
-      <p>Conteúdo...</p>
-      <button onClick={() => setModoNoturno(!modoNoturno)}>Alternar Modo</button>
-    </div>
+    <form action="">
+      <input type="text" id="nome" onInput={e => setNome(e.target.value)} placeholder="Seu nome" />
+      <input type="text" id="mensagem" onInput={e => setMsg(e.target.value)} placeholder="Sua mensagem" />
+      <button type="submit">Enviar</button>
+      <p>{nome}</p>
+      <p>{msg}</p>
+    </form>
   );
 }
 
-export default ModoNoturno;
+export default FormularioContato;
